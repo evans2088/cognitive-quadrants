@@ -21,20 +21,18 @@ Automatic discovery, command syntax, installation paths, and UI labels vary by c
 
 ## Verification targets
 
-Before a public release, test the same package in at least:
+Before a formal release, test the same package in:
 
 - one Codex environment;
-- one Claude Code environment;
-- one other Agent Skills-compatible client.
+- one other Agent Skills-compatible client on an independent runtime.
 
-Confirm explicit invocation, implicit matching, relative resource loading, a mode switch, and the no-write-without-authorization boundary. Record client version and any observed limitation in the release notes.
+Claude Code is recommended where available, but is not a required release gate. Across the release matrix, confirm explicit invocation, relative resource loading, a mode switch, and the no-write-without-authorization boundary. Test implicit matching where the client exposes it, and record any untested behavior or limitation.
 
 ## Release record
 
-Before replacing `Unreleased` in the changelog with a version tag, record the results below in that release's notes. Do not claim cross-client verification until every target has been tested.
+Record results below before assigning a version tag. Do not claim a behavior check unless the corresponding row passed it.
 
 | Client | Version | Checks passed | Limitation or deviation |
 |---|---|---|---|
-| Codex |  |  |  |
-| Claude Code |  |  |  |
-| Another Agent Skills-compatible client |  |  |  |
+| Codex | codex-cli 0.146.0-alpha.3.1 | Structural validation; behavior regressions for mode selection, aliases, no-write reflection, and offline evidence handling | The packaged directory was supplied by path; automatic discovery was not separately exercised |
+| Qclaw (OpenClaw) | Qclaw 0.2.34 / OpenClaw 2026.6.5 | Discovery and visibility; explicit invocation; `SKILL.md` and mode-reference loading; 追问者 → 检验者 mode switch; no file write in a two-turn session | Implicit matching was not separately tested. The client resolved a synced local copy of the release runtime files rather than a GitHub-installed directory |
