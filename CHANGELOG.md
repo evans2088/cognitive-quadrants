@@ -8,4 +8,3 @@ All notable changes to Cognitive Quadrants are documented here.
 - Kept the four modes as one coherent skill with on-demand reference modules.
 - Moved maintainer-only audit guidance outside the runtime skill.
 - Added cross-Agent usage guidance, evaluation cases, licensing, and source acknowledgments.
-- Verified behavior in Codex and Qclaw (OpenClaw); see the release record in `docs/compatibility.md`.
