@@ -1,0 +1,4 @@
+interface:
+  display_name: "认知四象限"
+  short_description: "先识别认知缺口，再用盲区扫描、追问者、发散者或检验者推进问题"
+  default_prompt: "使用 $cognitive-quadrants 判断我当前缺少哪一种认知，并用最合适的方式帮我推进这个问题。"
