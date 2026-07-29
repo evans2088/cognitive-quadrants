@@ -4,9 +4,9 @@ All notable changes to Cognitive Quadrants are documented here.
 
 ## Unreleased
 
-### 2026-07-28 — grilling 对照吸收
+### 2026-07-28 — 对照式压力测试吸收
 
-来源：对照 geekx-grilling（极客杰尼的决策压力测试 skill），经对抗式审查后吸收 4 条改进。
+来源：经一次对照式压力测试与对抗式审查后，吸收 4 条改进。
 
 **probing.md**
 - 墙分类补操作级规定：框架墙（检查是否问题排除了答案）、守门人墙（区分规则 vs 惯例）、资源墙（先确认事实约束 vs 惰性假设）
@@ -16,7 +16,7 @@ All notable changes to Cognitive Quadrants are documented here.
 - step 5 对比加可逆性维度：多方案对比最小承诺信息量和回滚成本
 - step 5 对比加代价共披露：每方案长期代价（复杂度税/维护税/认知税）
 
-未吸收的 grilling 设计：推荐姿态、强制 2-3 选项、五项推导、阻塞状态、重述推荐项
+未吸收的参考设计：推荐姿态、强制 2-3 选项、五项推导、阻塞状态、重述推荐项
 
 ## 0.1.0 — 2026-07-26
 
