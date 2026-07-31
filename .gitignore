@@ -2,5 +2,10 @@
 *.swp
 .idea/
 .vscode/
-
-gotchas.md
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/AGENTS.md
+/每次升级记录文档（含原始思考）/
